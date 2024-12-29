@@ -1,12 +1,18 @@
 import '../css/Home.css'
+import Header from '../ults/Header';
+import Footer from '../ults/Footer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 const Home = () => {
     return(
       <>
-        <h1>Home</h1>
-        
+        <div className="container">
+          <Header/>
+
+          <Footer/>
+
+        </div>
       </> 
     )
   };
