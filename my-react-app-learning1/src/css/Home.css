@@ -1,0 +1,88 @@
+.body{
+    width: 100%;
+    height: 100%;
+}
+.title{
+    margin: 0 auto;
+    width: 50%;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    border: rgb(223, 223, 220) solid 2px;
+}
+.titleleft{
+    align-items: center;
+    display: flex;
+    
+}
+.title--icon{
+    margin-right: 8px;
+    color: rgb(223, 223, 220);
+    margin-left: 20px;
+}
+.titleleft--text{
+    font-weight: 100;
+}
+
+
+.levels{
+    list-style: none;
+    margin: 0 auto;
+    width: 50%;
+}
+.levelitem{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+    position: relative;
+}
+.levelitem::after{
+    position: absolute;
+    content: "";
+    top: calc(100%-10px);
+    left: 42px;
+    background-color: rgb(236, 232, 232);
+    display: block;
+    width: 8px;
+    height: 38px;
+}
+.levelitem:last-child::after{
+    display: none;
+}
+.levelitem:hover{
+    border-radius: 8px;
+    background-color: rgba(244, 242, 242, 0.886);
+}
+.levelitem--row{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid rgb(236, 232, 232);
+    text-align: center;
+    align-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.levelitem--row--label{
+    font-size: 1.4rem;
+    margin: 0 10px 0 0;
+}
+.levelitem--row--chapters{
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 10px 0 0 0;
+    
+}
+.levelitem--row--icon{
+    font-size: 30px;
+    color: rgb(152, 121, 93);
+    position: relative;
+    
+}

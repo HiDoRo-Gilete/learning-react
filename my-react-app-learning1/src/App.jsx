@@ -7,13 +7,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Title from "./pages/Title";
 import InforUser from "./pages/InforUser";
+import Login from "./pages/Login";
 function App() {
+  const Levels = [{level: 'Beginner A1',chapters:32, link: 'login'},
+    {level:'Elementary A2',chapters:32,link: 'login'},
+    {level:'Intermedia B1',chapters:32,link: 'login'},
+    {level:'Upper Intermedia B2',chapters:32,link: 'login'},
+    {level:'Advanced C1',chapters:32,link: 'login'}];
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Home />} />
+        <Route index element={<Home items = {Levels}/>} />
         <Route path="title" element={<Title />} />
         <Route path="infor_user" element={<InforUser />} />
+        <Route path="login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
