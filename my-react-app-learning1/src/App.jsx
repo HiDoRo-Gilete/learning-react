@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import Title from "./pages/Title";
 import InforUser from "./pages/InforUser";
 import Login from "./pages/Login";
+import levelA1 from './pages/levels/a1';
+
 function App() {
   const Levels = [{level: 'Beginner A1',chapters:32, link: 'login'},
     {level:'Elementary A2',chapters:32,link: 'login'},
@@ -21,6 +23,7 @@ function App() {
         <Route path="title" element={<Title />} />
         <Route path="infor_user" element={<InforUser />} />
         <Route path="login" element={<Login />} />
+        <Route path='levela1' element={<levelA1/>}></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -5,9 +5,7 @@ import { Outlet, Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook,faStaylinked,faUikit } from '@fortawesome/free-brands-svg-icons';
-import {  } from '@fortawesome/free-solid-svg-icons';
-import {  } from '@fortawesome/free-regular-svg-icons';
-import { } from '@fortawesome/fontawesome-free'
+
 
 
 const Home = (props) => {
