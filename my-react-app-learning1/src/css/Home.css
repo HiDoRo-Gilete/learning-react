@@ -1,8 +1,33 @@
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bg_home{
+    margin: 0;
+    width: 100%;
+}
 .body{
     width: 100%;
-    height: 100%;
+    height: 600px;
+    margin-top: 40px;
+    
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color: rgba(5,5,5,0.5);
+    
 }
 .title{
+    background-color: rgba(5,5,5,0.1);
     margin: 0 auto;
     width: 50%;
     height: 3.2rem;
@@ -10,8 +35,23 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 16px;
-    border: rgb(223, 223, 220) solid 2px;
+    border: var(--primary-color) solid 2px;
+    position: relative;
 }
+.title::after{
+    position: absolute;
+    content: "";
+    top: calc(100%);
+    left: 0;
+    
+    display: block;
+    width: 100%;
+    height: 10px;
+}
+.title:hover{
+    border-color:  rgb(243, 152, 16);
+}
+
 .titleleft{
     align-items: center;
     display: flex;
@@ -19,19 +59,32 @@
 }
 .title--icon{
     margin-right: 8px;
-    color: rgb(223, 223, 220);
+    color: var(--primary-color);
     margin-left: 20px;
 }
 .titleleft--text{
     font-weight: 100;
+    font-size: 1.6rem;
+    color: white;
 }
 
 
 .levels{
+    animation: fadeIn ease-in 0.2s;
+    display: none;
+    position: absolute;
     list-style: none;
-    margin: 0 auto;
-    width: 50%;
+    margin: 0 0 20px 0 ;
+    width: 100%;
+    border: var(--primary-color) solid 2px;
+    border-radius: 16px;
+    padding: 0;
+    top: calc(100% + 10px);
 }
+.title:hover .levels{
+    display: block;
+}
+
 .levelitem{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -43,17 +96,19 @@
     content: "";
     top: calc(100%-10px);
     left: 42px;
-    background-color: rgb(236, 232, 232);
+    background-color:var(--primary-color);
     display: block;
     width: 8px;
     height: 38px;
+    
 }
 .levelitem:last-child::after{
     display: none;
 }
 .levelitem:hover{
     border-radius: 8px;
-    background-color: rgba(244, 242, 242, 0.886);
+    background-color: rgba(255, 255, 255, 0.1);
+
 }
 .levelitem--row{
     cursor: pointer;
@@ -64,7 +119,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 4px solid rgb(236, 232, 232);
+    border: 4px solid var(--primary-color);
     text-align: center;
     align-content: center;
     margin-left: 20px;
@@ -73,16 +128,18 @@
 .levelitem--row--label{
     font-size: 1.4rem;
     margin: 0 10px 0 0;
+    color: white;
 }
 .levelitem--row--chapters{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 100;
-    margin: 10px 0 0 0;
-    
+    margin: 20px 0 0 0;
+    text-align: left;
+    color: white;
 }
 .levelitem--row--icon{
     font-size: 30px;
-    color: rgb(152, 121, 93);
+    color: rgb(255,255,255);
     position: relative;
     
 }

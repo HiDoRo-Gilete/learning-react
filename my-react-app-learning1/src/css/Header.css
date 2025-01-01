@@ -1,7 +1,8 @@
 .header{
+    padding: 40px 0 40px 0;
     text-align: center;
-    max-width: 1280;
-    color:blue;
+    width: 100%;
+    color:white;
 }
 .header-avata{
     

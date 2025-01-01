@@ -1,7 +1,7 @@
 import "../../css/a1.css"
 import Header from "../../ults/Header";
 import Footer from "../../ults/Footer";
-const levelA1 = ( ) => {
+const LevelA1 = () => {
     return(
         <> 
         <Header></Header>
@@ -100,4 +100,4 @@ const levelA1 = ( ) => {
     )
 };
 
-export default levelA1;
+export default LevelA1;

@@ -1,4 +1,5 @@
-import '../css/Home.css'
+import '../css/Home.css';
+import Pg_Home from'../assets/home_bg.png'
 import Header from '../ults/Header';
 import Footer from '../ults/Footer';
 import { Outlet, Link } from "react-router-dom";
@@ -10,6 +11,7 @@ import { faFacebook,faStaylinked,faUikit } from '@fortawesome/free-brands-svg-ic
 
 const Home = (props) => {
   const itemList = props.items;
+  
   console.log('helo',itemList)
   const listItem = itemList.map(item => <li className='levelitem'>
               <Link to={item.link} style={{ textDecoration: 'none' }}>
@@ -22,7 +24,7 @@ const Home = (props) => {
                       {item.level}
                     </h3>
                     <h3 className="levelitem--row--chapters">
-                      {item.chapters}
+                      {item.chapters} chapters
                     </h3>
                   </div>
                 </div>
@@ -31,24 +33,25 @@ const Home = (props) => {
               </li>);
     return(
       <>
+        <img src={Pg_Home} alt="" className='bg_home'/>
         <div className="container">
           <Header/>
           <div className="body">
             {/* title */}
+            
             <div className="title">
               <div className="titleleft">
               <FontAwesomeIcon icon={faUikit} className='title--icon' />
                 <h2 className='titleleft--text'>CEFR levels explained</h2> 
               </div>
               <FontAwesomeIcon icon={faUikit} className='title--icon'/>
-            </div>
-
-            <ul className="levels">
+              <ul className="levels">
               {listItem}
-            </ul>
+              </ul>
+            </div>
           </div>
-          <Footer/>
         </div>
+        <Footer/>
       </> 
     )
   };
