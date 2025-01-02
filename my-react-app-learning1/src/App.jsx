@@ -12,7 +12,7 @@ import Login from "./pages/Login";
 import LevelA1 from "./pages/levels/a1";
 
 function App() {
-  const Levels = [{level: 'Beginner A1',chapters:32, link: 'login'},
+  const Levels = [{level: 'Beginner A1',chapters:32, link: 'levela1'},
     {level:'Elementary A2',chapters:32,link: 'login'},
     {level:'Intermedia B1',chapters:32,link: 'login'},
     {level:'Upper Intermedia B2',chapters:32,link: 'login'},

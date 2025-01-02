@@ -1,3 +1,6 @@
+.list-lesson{
+    list-style: none;
+}
 .section-container {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -32,29 +35,6 @@
 .section-container a:hover {
     text-decoration: underline;
     color: #0056b3;
-}
-.lesson {
-    align-items: center;
-    background-color: rgb(245, 252, 249);
-    border-radius: 24px;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: flex;
-    font-family: Nista, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    height: 122px;
-    justify-content: space-around;
-    line-height: 27.2px;
-    margin-bottom: 8px;
-    padding: 16px 8px;
-    position: relative;
-    text-size-adjust: 100%;
-    unicode-bidi: isolate;
-    width: 479.6px;
-    -webkit-font-smoothing: antialiased;
-    z-index: 2;
-    max-width: 115px;
 }
 
 .circle1 {
