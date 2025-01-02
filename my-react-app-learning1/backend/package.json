@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend learning Englis",
+  "main": "server.js",
+  "scripts": {
+    "npm run start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "nodemailer": "^6.9.16"
+  }
+}
